@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <!-- solid style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header>
+
+            <div id="nombre">
+                <img src="assets/images/siluet.png" alt="" width="100px">
+
+                <h3>Buenas!! Me presento, soy:</h3>
+                <h1>Miqueas Núñez</h1>
+            </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#nombre">Home</a></li>
+                    <li><a href="#informacion">Sobre mí</a></li>
+                    <li><a href="#estudios">Mis Estudios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div id="redsocial">
+            <ul>
+                <li><a href="https://www.linkedin.com/in/miqueas-n%C3%BA%C3%B1ez-8ab635162/"><img src="assets/images/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/mike-n8"><img src="assets/images/github.png" alt=""></a></li>
+                <li><a href="#"><img src="assets/images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="assets/images/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div id="informacion">
+            <h3>Información Personal</h3>
+            <img class="fotoperfil" src="assets/images/yo-perfil.jpg" alt="">
+            <p>Estudiante de desarrollo de software, con conocimientos en HTML, CSS, JavaScript, React, Git y GitHub.</p>
+            <div id="datos-personales">
+                <ul>
+                    <li>Fecha de Nacimiento: 18/05/1998</li>
+                    <li>País: Argentina</li>
+                    <li>Provincia: Entre Rios</li>
+                    <li class="lis-da-pe">Em@il: mikeas888@gmail.com</li>
+                    <li class="lis-da-pe">Celular: 3442-517293</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="estudios">
+            <h3>Mis estudios</h3>
+            <ul id="cursos">
+                <li>
+                    <h2>Argentina Programa</h2>
+                    <img src="assets/images/argentina-programa.png">
+                    <button id="curso-descripcion-0" onclick="verParrafo()">Breve descripcion</button>
+                    <p id="breve-des-0" style="display: none;">Fundamentos, utilizando Gobstones. Programación Imperativa, utilizando JavaScript. Programación con Objetos, utilizando Ruby.</p>
+                </li>
+                <li>
+                    <h2>Argentina Programa 2.0</h2>
+                    <img src="assets/images/argentina-programa-2.0.jpg">
+                    <button class="curso-descripcion-1" onclick="verParrafo1()">Breve descripcion</button>
+                    <p class="breve-des-1" style="display: none;">Desarrollo Front End Dinámico, con Angular.</p>
+                </li>
+                <li>
+                    <h2>Digitalers</h2>
+                    <img src="assets/images/digitalers-telecom.png">
+                    <button class="curso-descripcion-2" onclick="verParrafo2()">Breve descripcion</button>
+                    <p class="breve-des-2" style="display: none;">Front End Developer | JavaScript - React.</p>
+                </li>
+                <li>
+                    <h2>Alura Latam</h2>
+                    <img src="assets/images/alura-oracle.png">
+                    <button class="curso-descripcion-3" onclick="verParrafo3()">Breve descripcion</button>
+                    <p class="breve-des-3" style="display: none;">Una guía utilizando los lenguajes populares de HTML, CSS y JavaScript.</p>
+                </li>
+                <li>
+                    <h2>Ticmas | Argentina Programa 4.0</h2>
+                    <img src="assets/images/ticmas-arg-programa.jpg">
+                    <button class="curso-descripcion-4" onclick="verParrafo4()">Breve descripcion</button>
+                    <p class="breve-des-4" style="display: none;">Primeros pasos del desarrollo frontend.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div id="contacto">
+            <h3>Contacto</h3>
+            
+            <form method="post" action="">
+                <label for=""> Nombre <span>*</span><br>
+
+                    <input name="nombre" type="text" required>
+
+                </label>
+
+                <label for=""><br> Email <span>*</span><br>
+
+                    <input name="email" type="email" required>
+
+                </label><br>
+
+                <label for=""> Mensaje <span>*</span><br>
+
+                    <textarea name="comentarios" id="" cols="30" rows="10" required></textarea>
+
+                </label>
+
+                <div class="enviar-borrar">
+                    <input type="submit" value="Enviar Consulta">
+                    <input type="reset" value="Borrar">
+                </div><br><br>
+            </form>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <div id="final">
+            <span>Miqueas Núñez</span><span>|</span><span>2023</span>
+            <div id="up-flecha">
+                <a href="#nombre">
+                    <i class="fa-solid fa-circle-up"></i>
+                </a>
+            </div>
+            <div id="social-bottom">
+                <a href="https://www.linkedin.com/in/miqueas-n%C3%BA%C3%B1ez-8ab635162/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/mike-n8"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+
+        <!-- JS -->
+    <script src="js/script.js"></script>
+
+</html>

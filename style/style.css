@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Itim&family=Lobster&display=swap');
+
+/* 
+font-family: 'Cabin', sans-serif;
+font-family: 'Itim', cursive;
+font-family: 'Lobster', cursive; */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header {
+    height: 205px;
+    background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,192,203,1));
+}
+
+#nombre {
+    font-family: 'Itim', cursive;
+    position: relative;
+    margin: 0 auto;
+}
+
+#nombre h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#nombre h1 {
+    width: 280px;
+    margin: auto;
+    text-align: center;
+    border-bottom: 5px solid #7319c1;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#nombre h1:hover{
+    width: 1300px;
+    color: #7319c1;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 45px;
+    text-shadow: 5px 1px 2px black;
+}
+
+nav{
+    position: absolute;
+    top: 00;
+    left: 200px;
+}
+
+#menu li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#menu a{
+    font-family: 'Lobster', cursive;
+    /* position: fixed; */
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#menu a:hover{
+    color: #7319c7;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+main {
+    margin-top: -16px;
+    font-family: 'Itim', cursive;
+    height: 2200px;
+    background: linear-gradient(rgba(255,192,203,1) 60%, rgba(115,25,199,1) 99%, rgba(0,0,0,1) 100%);
+}
+
+#redsocial ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 150px;
+}
+
+#redsocial li {
+    padding: 100px 60px 100px 60px;
+}
+
+#datos-personales {
+    margin-left: 250px;
+}
+
+#datos-personales li {
+    display: inline-block;
+    margin: 10px 50px;
+    list-style-type: none;
+    font-size: 20px;
+    border-bottom: 1px solid #7319c7;
+}
+
+#datos-personales li::before {
+  content: "> ";
+  font-size: 30px;
+}
+
+/* .lis-da-pe {
+    display: inline-block;
+} */
+
+#cursos {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#cursos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 30px 20px;
+    margin: 1% 1%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px black, 0px 7px 13px black, 0px -3px 0px rgb(0 0 0 / 20%) inset;
+    background-color: rgb(240, 228, 206);
+    transition: 1s;
+}
+
+#cursos li:hover {
+    box-shadow: 15px 10px 5px black;
+}
+
+#cursos li:hover img {
+    width: 250px;
+    height: 120px;
+    transition: 1s;
+}
+
+#cursos img {
+    width: 200px;
+    height: 100px;
+}
+
+.curso-certificado {
+    margin-top: 10px;
+}
+
+#cursos h2 {
+    height: 50px;
+    margin-top: -10px;
+}
+
+#cursos button {
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#cursos button:hover{
+    color: white;
+    background-color: #7319c1;
+}
+
+#redsocial img {
+    width: 100px;
+    transition: 1s;
+}
+
+#redsocial img:hover{
+    width: 200px;
+    box-shadow: 5px 1px 2px #7319c1;
+}
+
+#informacion {
+    clear: left;
+    margin: 0 0 200px 0;
+}
+
+#informacion h3, #estudios h3, #contacto h3 {
+    width: 400px;
+    margin: auto auto 50px auto;
+    text-align: center;
+    font-size: 2em;
+    border-bottom: 5px solid #7319c1;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#informacion h3:hover, #estudios h3:hover, #contacto h3:hover{
+    width: 1300px;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 45px;
+    text-shadow: 5px 1px 2px #7319c1;
+}
+
+#informacion p {
+    font-size: 20px;
+}
+
+.fotoperfil {
+    width: 200px;
+    float: left;
+    margin: 0 20px 20px 20px;
+    box-shadow: 5px 1px 2px black;
+    transition: 0.1s;
+}
+
+.fotoperfil:hover {
+    opacity: 0.5;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+}
+
+#contacto span {
+    color: red;
+}
+
+#contacto label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#contacto input {
+    height: 40px;
+}
+
+#contacto input, #contacto textarea {
+    width: 50%;
+    background-color: rgb(240, 228, 206);
+}
+
+#contacto .enviar-borrar input {
+    width: auto;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    font-family: 'Itim', cursive;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    height: 120px;
+}
+
+#up-flecha i {
+    width: 10px;
+    position: absolute;
+    right: 100px;
+    font-size: 60px;
+    color: white;
+    transition: 1s;
+}
+
+#up-flecha i:hover {
+    font-size: 70px;
+}
+
+#final span {
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+#social-bottom i {
+    font-size: 30px;
+}
+
+#social-bottom i:active {
+    color: white;
+}
