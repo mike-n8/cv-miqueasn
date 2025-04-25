@@ -6,29 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- Style -->
     <link rel="stylesheet" href="style/style.css">
     <!-- solid style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
 </head>
 <body>
+        <span id="inicio"></span>
+
+        <nav id="menu">
+                <a href="#inicio">Home</a>
+                <a href="#estudios">Mis Estudios</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#informacion">Sobre mí</a>
+        </nav>
+    
+
     <header>
 
-            <div id="nombre">
-                <img src="assets/images/siluet.png" alt="" width="100px">
+        <div class="logo-portada"><img src="assets/images/siluet.png" alt="" width="100px"></div>
 
-                <h3>Buenas!! Me presento, soy:</h3>
-                <h1>Miqueas Núñez</h1>
+        <div id="nombre">
+
+            <div class="escritura">
+                <p><span class="typed"></span></p>
             </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#nombre">Home</a></li>
-                    <li><a href="#informacion">Sobre mí</a></li>
-                    <li><a href="#estudios">Mis Estudios</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+
+            <h1>Miqueas Núñez</h1>
         </div>
 
     </header>
@@ -45,7 +50,7 @@
 
         <div id="informacion">
             <h3>Información Personal</h3>
-            <img class="fotoperfil" src="assets/images/yo-perfil.jpg" alt="">
+            <a href="https://www.google.com.ar/"><img class="fotoperfil" src="assets/images/yo-perfil.jpg" alt=""></a>
             <p>Estudiante de desarrollo de software, con conocimientos en HTML, CSS, JavaScript, React, Git y GitHub.</p>
             <div id="datos-personales">
                 <ul>
@@ -66,33 +71,52 @@
                     <img src="assets/images/argentina-programa.png">
                     <button id="curso-descripcion-0" onclick="verParrafo()">Breve descripcion</button>
                     <p id="breve-des-0" style="display: none;">Fundamentos, utilizando Gobstones. Programación Imperativa, utilizando JavaScript. Programación con Objetos, utilizando Ruby.</p>
+                    <button class="curso-certificado" id="certif1">Certificado</button>
                 </li>
                 <li>
                     <h2>Argentina Programa 2.0</h2>
                     <img src="assets/images/argentina-programa-2.0.jpg">
                     <button class="curso-descripcion-1" onclick="verParrafo1()">Breve descripcion</button>
                     <p class="breve-des-1" style="display: none;">Desarrollo Front End Dinámico, con Angular.</p>
+                    <button class="curso-certificado" id="certif2">Certificado</button>
                 </li>
                 <li>
                     <h2>Digitalers</h2>
                     <img src="assets/images/digitalers-telecom.png">
                     <button class="curso-descripcion-2" onclick="verParrafo2()">Breve descripcion</button>
                     <p class="breve-des-2" style="display: none;">Front End Developer | JavaScript - React.</p>
+                    <button class="curso-certificado" id="certif3">Certificado</button>
                 </li>
                 <li>
                     <h2>Alura Latam</h2>
                     <img src="assets/images/alura-oracle.png">
                     <button class="curso-descripcion-3" onclick="verParrafo3()">Breve descripcion</button>
                     <p class="breve-des-3" style="display: none;">Una guía utilizando los lenguajes populares de HTML, CSS y JavaScript.</p>
+                    <button class="curso-certificado" id="certif4">Certificado</button>
                 </li>
                 <li>
                     <h2>Ticmas | Argentina Programa 4.0</h2>
                     <img src="assets/images/ticmas-arg-programa.jpg">
                     <button class="curso-descripcion-4" onclick="verParrafo4()">Breve descripcion</button>
                     <p class="breve-des-4" style="display: none;">Primeros pasos del desarrollo frontend.</p>
+                    <button class="curso-certificado" id="certif5">Certificado</button>
                 </li>
             </ul>
         </div>
+
+        <div class="ful-img" id="fulImgBox">
+            <img src="assets/images/star-l.png" alt="" id="fulImg">
+            <span onclick="closeImg()">X</span>
+
+        </div>
+
+        <!-- <div class="gallery-img" style="display: none;">
+
+            <img src="assets/pictures/certificado-se-programar.png" alt=""onclick="openFulImg(this.src)">
+            <img src="assets/pictures/certificado-digitalers.png" alt=""onclick="openFulImg(this.src)">
+            <img src="assets/pictures/certificado-alura.png" alt=""onclick="openFulImg(this.src)">
+
+        </div> -->
 
         <div id="contacto">
             <h3>Contacto</h3>
@@ -123,14 +147,13 @@
             </form>
         </div>
 
-
     </main>
     <footer>
 
         <div id="final">
             <span>Miqueas Núñez</span><span>|</span><span>2023</span>
             <div id="up-flecha">
-                <a href="#nombre">
+                <a href="#inicio">
                     <i class="fa-solid fa-circle-up"></i>
                 </a>
             </div>
@@ -146,7 +169,10 @@
     
 </body>
 
-        <!-- JS -->
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+     <!-- Main JS -->
     <script src="js/script.js"></script>
 
 </html>

@@ -14,23 +14,28 @@ body {
 }
 
 header {
-    height: 205px;
     background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,192,203,1));
+}
+
+.logo-portada {
+    margin-top: -40px;
+}
+
+.escritura p {
+    text-align: center;
+}
+
+.escritura span {
+    font-weight: bold;
 }
 
 #nombre {
     font-family: 'Itim', cursive;
-    position: relative;
-    margin: 0 auto;
-}
-
-#nombre h3 {
-    text-align: center;
-    font-weight: bold;
 }
 
 #nombre h1 {
     width: 280px;
+    height: 50px;
     margin: auto;
     text-align: center;
     border-bottom: 5px solid #7319c1;
@@ -47,38 +52,42 @@ header {
     text-shadow: 5px 1px 2px black;
 }
 
-nav{
-    position: absolute;
-    top: 00;
-    left: 200px;
+#menu {
+    position: sticky;
+    top: 0;
+    left: 10%;
+    background: linear-gradient(rgba(255,192,203,1) 0%, rgba(255,255,255,1) 100%);
+    height: 50px;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
 }
 
-#menu li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-#menu a{
+#menu a {
+    flex: 1;
     font-family: 'Lobster', cursive;
-    /* position: fixed; */
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: 0.5s;
 }
 
 #menu a:hover{
     color: #7319c7;
     text-decoration: underline;
-    font-size: 30px;
+    font-size: 25px;
+    background-color: rgb(212, 164, 170);
 }
 
 main {
     margin-top: -16px;
     font-family: 'Itim', cursive;
-    height: 2200px;
+    height: auto;
     background: linear-gradient(rgba(255,192,203,1) 60%, rgba(115,25,199,1) 99%, rgba(0,0,0,1) 100%);
 }
 
@@ -86,7 +95,7 @@ main {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-bottom: 150px;
+    height: 100vh;
 }
 
 #redsocial li {
@@ -109,10 +118,6 @@ main {
   content: "> ";
   font-size: 30px;
 }
-
-/* .lis-da-pe {
-    display: inline-block;
-} */
 
 #cursos {
     width: 1100px;
@@ -161,7 +166,7 @@ main {
 #cursos button {
     font-weight: bold;
     font-size: 15px;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 1s;
 }
@@ -189,6 +194,7 @@ main {
 #informacion h3, #estudios h3, #contacto h3 {
     width: 400px;
     margin: auto auto 50px auto;
+    height: 50px;
     text-align: center;
     font-size: 2em;
     border-bottom: 5px solid #7319c1;
@@ -196,7 +202,7 @@ main {
     transition: 1s;
 }
 
-#informacion h3:hover, #estudios h3:hover, #contacto h3:hover{
+#informacion h3:hover, #estudios h3:hover, #contacto h3:hover {
     width: 1300px;
     font-style: italic;
     text-decoration: none;
@@ -218,6 +224,39 @@ main {
 
 .fotoperfil:hover {
     opacity: 0.5;
+}
+
+.ful-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    /* align-items: center;
+    justify-content: center; */
+    text-align: center;
+    /* vertical-align: center; */
+    z-index: 9;
+}
+
+.ful-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.ful-img span:active {
+    color: red;
+}
+
+.ful-img img {
+    width: 90%;
+    max-width: 600px;
 }
 
 form {
